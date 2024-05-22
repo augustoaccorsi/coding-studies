@@ -3,7 +3,7 @@ function mergeSort(array) {
         return array;
     }
 
-    const middle = Math.floor(array.length / 2)
+    const middle = Math.floor(array.length/2)
     const left = array.slice(0, middle);
     const right = array.slice(middle, array.length);
     return merge(mergeSort(left), mergeSort(right));
